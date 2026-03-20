@@ -36,6 +36,15 @@ except requests.exceptions.Timeout:
 except Exception as err:
     print(f"Something went wrong: {err}")
 
+#Task 3 — Protect User Privacy
+
+print(f"Fetching weather for: {city}...")
+
+# we do not log user location data like city names becaustt is considere personal/sensitive information 
+#Logging such data may violate privcy regulation like gdpr and data minimization principles.
+
+
+
 
      
 
@@ -44,14 +53,7 @@ except Exception as err:
     
     
     
-except requests.exceptions.ConnectionError:
-  print("error connecting to the server")
-except requests.exceptions.HTTPError as e:
-  print(f"HTTP error occured: {e}")
-except requests.exceptions.TImeout:
-  print("Requets timed out")
-except requests.exceptions.RequestException as err:
-  print(f"some other error occurred:{err}")
+
    
 
 
