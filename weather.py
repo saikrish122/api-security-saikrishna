@@ -38,7 +38,7 @@ except Exception as err:
 
 #Task 3 — Protect User Privacy
 
-print(f"Fetching weather for: {city}...")
+print(f"Fetching weather for: {city}")
 
 # we do not log user location data like city names becaustt is considere personal/sensitive information 
 #Logging such data may violate privcy regulation like gdpr and data minimization principles.
